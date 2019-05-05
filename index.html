@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora IMC</title>
+        <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+        <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.mask.js"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
+    </head>
+    <body>
+
+        <div class="site">
+            <div class="calculadora">
+                <form method="POST" class="formulario">
+                    <label>Altura:<br/>
+                    <input type="number" step="0.01" id="altura" name="altura" class="box" placeholder="Digite sua altura." /></label><br/><br/>
+                    <label>Peso:<br/>
+                    <input type="number" step="0.01" id="peso" name="peso" class="box" placeholder="Digite seu peso." /></label><br/><br/>
+                    <input type="submit" value="Calcular IMC" id="bt" class="bt" />
+                </form>
+            </div>
+            <div class="tela">
+                <div id="resultado"></div><br/>
+                <div id="orientacao"></div>
+                <img class="superman" id="imagem" src="assets/images/logo.png" />
+            </div>
+        </div>
+
+    </body>
+</html>
